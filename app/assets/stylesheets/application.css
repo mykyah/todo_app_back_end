@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+body{ 
+ padding:40px;
+ font-family: 'Fascinate Inline', cursive;
+}
+
+li{
+    list-style: none;
+padding: 21px;
+border-bottom:5px solid #666;
+}
+h1{color:#aaa;
+    text-align: center;
+}
+html{
+    background:#e8e8e8;
+}
+
+ul{
+    margin:0px;
+    padding:0px;
+    background:white;
+border-top:12px solid #666; 
+
+}
+.button{ 
+    
+}
