@@ -1,19 +1,16 @@
+<h1>Workshop</h1>
 
-        <h1>Workshop</h1>
-    <ul>
-        <li>
-            <input type="checkbox">
-            <label>  
-            <a href="show/1">make the curriculum</a> <%= 100+3 %> pomdoros
-            </label>
-        </li>
-         <li>
-            <input type="checkbox">
-            <label>  
-            <a href="show/2">walk the dog</a> 4 pomdoros
-            </label>
-            </li>
+<ul>
+<% @todos.each do |todo| %>
+    <li>
+        <input type="checkbox" name=""/>
+        <a href="show/<%= todo.id %>"><%= todo.description %></a>
+        <span class="pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+    </li>
+<% end %>
+</ul>
         
-    </ul>
-    <a class="button" href="add.html">add</a>
+<div id="new-todo-block">
+    <a href="/todo/new" class="button" id="add-new-todo-button">Add a todo</a>
+</div> 
     
