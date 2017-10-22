@@ -5,4 +5,7 @@
 <input type="text">
 <input type="submit" value="add">
 <input type="date">
+
+<a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">edit</a>
+<a href="/todo/destroy/<%= @todo.id %>">delete</a>
 <a href="index.html">back</a>
